@@ -1,9 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from    './components/Home';
 
-ReactDOM.render(
+class ReactComponent extends React.Component{
+    render(){
+        return(
 
-  document.getElementById('root')
-);
+            <div>
+                <h1>Home Component </h1>
+                <Home/>
+            </div>
+        );
+    }
+}
 
-// If y
+ReactDOM.render(<ReactComponent/>, document.getElementById("root"));
